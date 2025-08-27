@@ -1,0 +1,20 @@
+import Image from "next/image";
+import React from "react";
+
+const Member = ({ img, name, role }) => {
+  return (
+    <article>
+      <Image
+        width={250}
+        height={325}
+        src={img.src}
+        alt={name}
+        className="w-full h-auto rounded-lg"
+      />
+      <h6 className="mt-4 font-semibold">{name}</h6>
+      <p className="text-gray-600">{role}</p>
+    </article>
+  );
+};
+
+export default Member;

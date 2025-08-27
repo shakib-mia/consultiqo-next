@@ -1,26 +1,144 @@
+/* @import "sweetalert2/src/sweetalert2.scss"; */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --container-width-sm: 100%;
+  --container-width-md: 720px;
+  --container-width-lg: 960px;
+  --container-width-xl: 1110px;
+
+  --text-heading-1: 60px;
+  --text-heading-1--line-height: 130%;
+
+  --text-heading-2: 48px;
+  --text-heading-2--line-height: 130%;
+
+  --text-heading-3: 36px;
+  --text-heading-3--line-height: 130%;
+
+  --text-heading-4: 32px;
+  --text-heading-4--line-height: 130%;
+
+  --text-heading-5: 24px;
+  --text-heading-5--line-height: 130%;
+
+  --text-heading-6: 21px;
+  --text-heading-6--line-height: 130%;
+
+  --text-lg: 18px;
+  --text-lg--line-height: 170%;
+
+  --text-base: 16px;
+  --text-base--line-height: 170%;
+
+  --text-sm: 14px;
+  --text-sm--line-height: 170%;
+
+  --text-button: 13px;
+  --text-button--letter-spacing: 1.63px;
+
+  --color-dark: #161c2d;
+  --color-primary: #473bf0;
+  --color-primary-light: #f4f7fa;
+  --color-success: #68d585;
+  --color-error: #f74d4d;
+  --color-light: #979797;
+
+  --font-gilroy-bold: "Gilroy-Bold", sans-serif;
+  --font-gilroy-heavy: "Gilroy-Heavy", sans-serif;
+  --font-gilroy-light: "Gilroy-Light", sans-serif;
+  --font-gilroy-medium: "Gilroy-Medium", sans-serif;
+  --font-gilroy-regular: "Gilroy-Regular", sans-serif;
+
+  --font-rubik: "Rubik", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* @layer base { */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: var(--container-width-sm);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (min-width: 640px) {
+  .container {
+    max-width: var(--container-width-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: var(--container-width-lg);
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: var(--container-width-xl);
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply font-gilroy-regular text-lg text-dark;
+}
+
+/* Hide scrollbar for all elements */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+/* WebKit-based browsers (Chrome, Safari, Opera) */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-gilroy-bold;
+}
+
+button,
+.button {
+  @apply bg-primary text-white px-4 py-2 rounded-md border-2 border-primary hover:bg-white hover:text-primary transition cursor-pointer font-gilroy-medium;
+}
+h1 {
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-heading-1;
+}
+
+h2 {
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-heading-2;
+}
+
+h3 {
+  @apply text-2xl md:text-3xl lg:text-heading-3;
+}
+
+h4 {
+  @apply text-2xl lg:text-heading-4;
+}
+
+h5 {
+  @apply text-heading-5;
+}
+
+h6 {
+  @apply text-heading-6;
+}
+section,
+footer {
+  @apply py-14 lg:py-20;
+}
+
+input {
+  @apply border border-light w-full py-3 px-5 rounded-lg focus:outline-none;
 }
