@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-const Member = ({ img, name, role }) => {
+const Member = ({ img, name, role, id }) => {
   return (
-    <article>
+    <article data-animate="fade-in-up" data-delay={(id % 4) * 100}>
       <Image
         width={250}
         height={325}

@@ -2,6 +2,7 @@
 import axios from "axios";
 import React from "react";
 import Swal from "sweetalert2";
+import Button from "../Button/Button";
 
 const NewsletterForm = () => {
   const handleSubmit = (e) => {
@@ -39,14 +40,14 @@ const NewsletterForm = () => {
         placeholder="Enter Your Email Address"
         data-animate="fade-in-right"
       />
-      <button
+      <Button
         type="submit"
         className="h-fit"
         data-animate="fade-in-right"
         data-delay="500"
       >
         Subscribe
-      </button>
+      </Button>
     </form>
   );
 };

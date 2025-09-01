@@ -5,11 +5,13 @@ import Services from "./components/Services/Services";
 import Features from "./components/Features/Features";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
-import Newsletter from "./components/Newsletter/Newsletter";
+import HearthMotionProvider from "./components/AosWrapper/AosWrapper";
 
 export default function Home() {
   return (
-    <>
+    <HearthMotionProvider>
+      {/* <div id="hm-wrapper">
+        <div id="hm-content"> */}
       <Header />
       <Stats />
       <Services />
@@ -36,6 +38,8 @@ export default function Home() {
 
       <Testimonials />
       <Contact />
-    </>
+      {/* </div>
+      </div> */}
+    </HearthMotionProvider>
   );
 }

@@ -23,10 +23,10 @@ const Navbar = () => {
         scrollDirection === "down" ? "-translate-y-52" : "translate-y-0"
       } ${
         lastScrollY > 0
-          ? "bg-white text-black shadow-lg"
+          ? "bg-white !text-black shadow-lg"
           : pathname === "/"
           ? "bg-transparent text-white"
-          : "text-black"
+          : "!text-black"
       } transition-all py-4 fixed top-0 left-0 w-full z-[99999] font-rubik`}
       id="navbar"
     >

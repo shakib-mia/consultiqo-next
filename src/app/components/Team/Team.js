@@ -25,8 +25,8 @@ const Team = () => {
   return (
     <section className="container">
       <div className="lg:w-7/12 mx-auto text-center mt-24">
-        <h1>Meet our team</h1>
-        <p>
+        <h1 data-animate="fade-in-left">Meet our team</h1>
+        <p data-animate="fade-in-left">
           With lots of unique blocks, you can easily build a page without
           coding. Build your next consultancy website within few minutes.
         </p>
@@ -34,9 +34,9 @@ const Team = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-16 items-center">
         {members.map((member, index) => (
-          <Member {...member} key={index} />
+          <Member {...member} id={index} key={index} />
         ))}
-        <article>
+        <article data-animate="fade-in" data-delay="400">
           <h5>Interested to join our team ?</h5>
           <Link
             className="text-heading-5 text-primary font-black font-rubik flex gap-2 mt-2 items-center"

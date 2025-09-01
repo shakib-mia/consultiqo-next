@@ -1,5 +1,6 @@
 import React from "react";
 import bg from "@/app/assets/images/BG.jpg";
+import Button from "../Button/Button";
 
 const Header = () => {
   return (
@@ -30,14 +31,22 @@ const Header = () => {
             </p>
 
             {/* <!-- Call-to-Action Button --> */}
-            <a
+            {/* <a
               href="https://templatehearth.vercel.app/"
               data-animate="fade-in-left"
               data-delay="400"
               className="button inline-block"
             >
               Get Started
-            </a>
+            </a> */}
+            <Button
+              href="https://templatehearth.vercel.app/"
+              data-animate="fade-in-left"
+              data-delay="400"
+              className="button inline-block"
+            >
+              Get Started
+            </Button>
           </div>
         </div>
       </div>

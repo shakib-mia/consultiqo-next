@@ -1,5 +1,6 @@
 import React from "react";
 import consultancyBg from "./../../assets/images/consultancy-bg.png";
+import Button from "../Button/Button";
 
 const Contact = () => {
   return (
@@ -122,13 +123,20 @@ const Contact = () => {
               </div>
 
               {/* <!-- Submit button --> */}
-              <button
+              <Button
                 data-animate="fade-in-right"
                 type="submit"
                 className="w-full"
               >
                 Get Free Consultancy
-              </button>
+              </Button>
+              {/* <Button
+                data-animate="fade-in-right"
+                type="submit"
+                className="w-full"
+              >
+                Get Free Consultancy
+              </Button> */}
             </form>
           </div>
         </div>

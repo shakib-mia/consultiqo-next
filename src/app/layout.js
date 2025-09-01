@@ -3,7 +3,7 @@ import "sweetalert2/src/sweetalert2.scss";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Newsletter from "./components/Newsletter/Newsletter";
-import AOSLenisWrapper from "./components/AosWrapper/AosWrapper";
+import HearthMotionProvider from "./components/AosWrapper/AosWrapper";
 
 export const metadata = {
   title: "Consultiqo",
@@ -14,13 +14,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* <SmoothScroll /> */}
-        <AOSLenisWrapper />
+        {/* <div id="hm-wrapper">
+          <div id="hm-content"> */}
         <Navbar />
         {children}
         <Newsletter />
         <Footer />
+        {/* </div>
+        </div> */}
       </body>
+
+      {/* <Scr src="https://cdn.jsdelivr.net/gh/shakib-mia/hearthmotion@9af4607/hearthmotion.js" type="module"></Scr> */}
     </html>
   );
 }

@@ -6,32 +6,41 @@ import coder2 from "@/app/assets/images/coders/Image 2.jpg";
 import coder3 from "@/app/assets/images/coders/Image 3.jpg";
 import coder4 from "@/app/assets/images/coders/Image 4.jpg";
 import Team from "../components/Team/Team";
+import HearthMotionProvider from "../components/AosWrapper/AosWrapper";
 
 const page = () => {
   return (
-    <>
+    <HearthMotionProvider>
       <section className="container">
         <div className="lg:w-7/12 mx-auto text-center mt-24">
-          <h1>Our story</h1>
-          <p>
+          <h1 data-animate="fade-in-left">Our story</h1>
+          <p data-animate="fade-in-left" data-delay="100">
             With lots of unique blocks, you can easily build a page without
             coding. Build your next consultancy website within few minutes.
           </p>
         </div>
 
-        <Image src={about} alt="about" className="pt-10" />
+        <Image
+          data-animate="fade-in-left"
+          data-delay="200"
+          src={about}
+          alt="about"
+          className="pt-10"
+        />
       </section>
 
       <section className="container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
-        <h2>We are here to help the customers to get their success.</h2>
+        <h2 data-animate="fade-in-left" data-delay="100">
+          We are here to help the customers to get their success.
+        </h2>
 
         <aside className="space-y-4">
-          <p>
+          <p data-animate="fade-in-right" data-delay="100">
             We share common trends and strategies for improving your rental
             income and making sure you stay in high demand of service.{" "}
           </p>
 
-          <p>
+          <p data-animate="fade-in-right" data-delay="100">
             With lots of unique blocks, you can easily build a page without
             coding. Build your next landing page. With lots of unique blocks,
             you can easily build a page without coding any other page.
@@ -43,22 +52,48 @@ const page = () => {
         <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           <aside className="grid grid-cols-2 gap-4">
             <div className="space-y-4 relative -top-11">
-              <Image src={coder1} alt="coder1" className="w-full" />
-              <Image src={coder3} alt="coder3" className="w-full" />
+              <Image
+                src={coder1}
+                alt="coder1"
+                className="w-full"
+                data-animate="fade-in-left"
+                data-delay="300"
+              />
+              <Image
+                src={coder3}
+                alt="coder3"
+                className="w-full"
+                data-animate="fade-in-left"
+                data-delay="300"
+              />
             </div>
             <div className="space-y-4">
-              <Image src={coder2} alt="coder2" className="w-full" />
-              <Image src={coder4} alt="coder4" className="w-full" />
+              <Image
+                src={coder2}
+                alt="coder2"
+                className="w-full"
+                data-animate="fade-in-left"
+                data-delay="100"
+              />
+              <Image
+                src={coder4}
+                alt="coder4"
+                className="w-full"
+                data-animate="fade-in-left"
+                data-delay="100"
+              />
             </div>
           </aside>
           <aside className="space-y-4">
-            <h2>High skilled coders from worldwide.</h2>
-            <p>
+            <h2 data-animate="fade-in-right">
+              High skilled coders from worldwide.
+            </h2>
+            <p data-animate="fade-in-right">
               We share common trends and strategies for improving your rental
               income and making sure you stay in high demand of service.
             </p>
 
-            <p>
+            <p data-animate="fade-in-right">
               With lots of unique blocks, you can easily build a page without
               coding. Build your next landing page. With lots of unique blocks,
               you can easily build a page without coding any other page.
@@ -68,7 +103,7 @@ const page = () => {
       </section>
 
       <Team />
-    </>
+    </HearthMotionProvider>
   );
 };
 
