@@ -124,12 +124,12 @@ const Navbar = () => {
           <ul className="flex flex-col divide-y font-medium text-gray-700">
             {["/", "/services", "/features", "/contact"].map((href, i) => (
               <li key={i}>
-                <Link
+                <SafeLink
                   href={href}
                   className="block container py-3 hover:bg-primary hover:text-white transition"
                 >
                   {href === "/" ? "Home" : href.replace("/", "").toUpperCase()}
-                </Link>
+                </SafeLink>
               </li>
             ))}
             <li className="container py-3">

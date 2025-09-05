@@ -10,6 +10,7 @@ import Image from "next/image";
 import Member from "../Member/Member";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa6";
+import SafeLink from "../SafeLink/SafeLink";
 
 const Team = () => {
   const members = [
@@ -38,12 +39,12 @@ const Team = () => {
         ))}
         <article data-animate="fade-in" data-delay="400">
           <h5>Interested to join our team ?</h5>
-          <Link
+          <SafeLink
             className="text-heading-5 text-primary font-semibold font-rubik flex gap-2 mt-2 items-center"
             href={"/"}
           >
             Apply Now <FaChevronRight />
-          </Link>
+          </SafeLink>
         </article>
       </div>
 
