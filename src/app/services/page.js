@@ -2,6 +2,7 @@ import axios from "axios";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
+import Service from "../components/Service/Service";
 
 const Page = async () => {
   const { data: services } = await axios.get(
@@ -22,51 +23,8 @@ const Page = async () => {
       </div>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-0">
-        {services.map((service) => (
-          <a
-            href={"https://templatehearth.vercel.app/services/" + service.slug}
-            target="_blank"
-            rel="noreferrer"
-            className="border border-light rounded-xl overflow-hidden inline-block"
-            data-animate="fade-in-up"
-            key={service._id}
-          >
-            {/* <!-- Service Image --> */}
-            <Image
-              width={300}
-              height={100}
-              className="w-full aspect-video object-cover"
-              src={service.image}
-              alt="Content Writing Service"
-            />
-            {/* <!-- Card Footer: Service Name + Arrow Icon --> */}
-            <div className="p-4 flex justify-between items-center">
-              <p className="text-lg font-gilroy-regular">{service.title}</p>
-              {/* <!-- Arrow Icon --> */}
-              <svg
-                width="17"
-                height="12"
-                viewBox="0 0 17 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1 5.99998H16"
-                  stroke="#161C2D"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M11 1L16 6L11 11"
-                  stroke="#161C2D"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
-          </a>
+        {services.map((service, key) => (
+          <Service {...service} key={key} id={key} />
         ))}
       </section>
     </section>
