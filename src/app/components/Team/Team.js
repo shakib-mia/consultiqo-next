@@ -39,7 +39,7 @@ const Team = () => {
         <article data-animate="fade-in" data-delay="400">
           <h5>Interested to join our team ?</h5>
           <Link
-            className="text-heading-5 text-primary font-black font-rubik flex gap-2 mt-2 items-center"
+            className="text-heading-5 text-primary font-semibold font-rubik flex gap-2 mt-2 items-center"
             href={"/"}
           >
             Apply Now <FaChevronRight />
