@@ -30,15 +30,6 @@ const Header = () => {
               coding. Build your next consultancy website within few minutes.
             </p>
 
-            {/* <!-- Call-to-Action Button --> */}
-            {/* <a
-              href="https://templatehearth.vercel.app/"
-              data-animate="fade-in-left"
-              data-delay="400"
-              className="button inline-block"
-            >
-              Get Started
-            </a> */}
             <Button
               href="https://templatehearth.vercel.app/"
               data-animate="fade-in-left"

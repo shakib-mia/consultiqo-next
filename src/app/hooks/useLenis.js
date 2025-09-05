@@ -1,5 +1,8 @@
+"use client";
+
 // hooks/useLenis.js
-import Lenis from "lenis";
+// import Lenis from "lenis";
+import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
 
 const useLenis = () => {
@@ -19,7 +22,7 @@ const useLenis = () => {
     };
   }, []);
 
-  return;
+  // return;
 };
 
 export default useLenis;
