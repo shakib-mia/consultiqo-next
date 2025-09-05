@@ -1,10 +1,8 @@
-import Image from "next/image";
 import React from "react";
-import axios from "axios";
 import Button from "../Button/Button";
 import Services from "../Services/Services";
 
-const ServicesSection = async () => {
+const ServicesSection = () => {
   return (
     // <!-- Services Section -->
     <section className="container" id="services">
