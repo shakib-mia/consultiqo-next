@@ -72,7 +72,7 @@ const Navbar = () => {
         {/* CTA & Hamburger */}
         <div className="flex items-center">
           <Button
-            className="hidden md:block"
+            className="!hidden md:!block"
             href="https://templatehearth.vercel.app/contact"
             target="_blank"
           >
@@ -117,21 +117,51 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`absolute top-full left-0 w-full bg-white shadow-md md:hidden transition-[height] overflow-hidden ${
-            phoneNav ? "h-72" : "h-0"
+          className={`absolute top-full left-0 w-full bg-white shadow-md md:hidden max-h-80 transition-[height] overflow-hidden ${
+            phoneNav ? "h-96" : "h-0"
           }`}
         >
           <ul className="flex flex-col divide-y font-medium text-gray-700">
-            {["/", "/services", "/features", "/contact"].map((href, i) => (
-              <li key={i}>
-                <SafeLink
-                  href={href}
-                  className="block container py-3 hover:bg-primary hover:text-white transition"
-                >
-                  {href === "/" ? "Home" : href.replace("/", "").toUpperCase()}
-                </SafeLink>
-              </li>
-            ))}
+            <li>
+              <SafeLink
+                href="/"
+                className="hover:text-purple-600 inline-block py-2 px-4 w-full"
+              >
+                Home
+              </SafeLink>
+            </li>
+            <li>
+              <SafeLink
+                href="/about"
+                className="hover:text-purple-600 inline-block py-2 px-4 w-full"
+              >
+                About
+              </SafeLink>
+            </li>
+            <li>
+              <SafeLink
+                href="/services"
+                className="hover:text-purple-600 inline-block py-2 px-4 w-full"
+              >
+                Services
+              </SafeLink>
+            </li>
+            <li>
+              <SafeLink
+                href="/features"
+                className="hover:text-purple-600 inline-block py-2 px-4 w-full"
+              >
+                Features
+              </SafeLink>
+            </li>
+            <li>
+              <SafeLink
+                href="/contact"
+                className="hover:text-purple-600 inline-block py-2 px-4 w-full"
+              >
+                Contact
+              </SafeLink>
+            </li>
             <li className="container py-3">
               <Button
                 href="https://templatehearth.vercel.app/contact"
