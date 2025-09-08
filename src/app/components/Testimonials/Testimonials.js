@@ -16,34 +16,34 @@ import Oval from "./../../assets/images/testimonial/Oval.jpg";
 const Testimonials = () => {
   const testimonials = [
     {
-      logo: amazon,
       text: "Albino has completely revolutionized our workflow — faster, easier, reliable.",
       name: "Arman Chowdhury",
       role: "Full Stack Developer",
+      image: "https://randomuser.me/api/portraits/men/32.jpg",
     },
     {
-      logo: Google,
       text: "Their team’s expertise and support made our product design process seamless.",
       name: "Nasrin Akter",
       role: "UX Designer",
+      image: "https://randomuser.me/api/portraits/women/44.jpg",
     },
     {
-      logo: amazon,
       text: "Thanks to Albino, our SEO rankings improved significantly within weeks.",
       name: "Rafiq Islam",
       role: "SEO Specialist",
+      image: "https://randomuser.me/api/portraits/men/65.jpg",
     },
     {
-      logo: Google,
       text: "Their marketing strategies helped us reach new heights in engagement.",
       name: "Sadia Rahman",
       role: "Marketing Manager",
+      image: "https://randomuser.me/api/portraits/women/36.jpg",
     },
     {
-      logo: amazon,
       text: "The team was incredibly responsive and helped us launch on time.",
       name: "Jahid Hasan",
       role: "Project Manager",
+      image: "https://randomuser.me/api/portraits/men/12.jpg",
     },
   ];
 
@@ -66,15 +66,21 @@ const Testimonials = () => {
         {testimonials.map((t, index) => (
           <SwiperSlide key={index}>
             <div className="text-center space-y-8 lg:space-y-12">
-              <Image
+              {/* <Image
                 src={t.logo}
                 alt="Client logo"
                 className="!w-fit mx-auto"
-              />
+              /> */}
               <h5>“{t.text}”</h5>
               <div className="flex gap-3 justify-center items-center">
                 <aside>
-                  <Image src={Oval} alt="Client testimonial photo" />
+                  <Image
+                    src={t.image}
+                    width={52}
+                    height={52}
+                    alt="Client testimonial photo"
+                    className="rounded-full"
+                  />
                 </aside>
                 <aside className="text-left">
                   <h6>{t.name}</h6>

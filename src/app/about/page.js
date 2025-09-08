@@ -7,6 +7,11 @@ import coder3 from "@/app/assets/images/coders/Image 3.jpg";
 import coder4 from "@/app/assets/images/coders/Image 4.jpg";
 import Team from "../components/Team/Team";
 
+export const metadata = {
+  title: "About - Consultiqo",
+  description: "Consulting Agency Full Site Kit",
+};
+
 const page = () => {
   return (
     <>

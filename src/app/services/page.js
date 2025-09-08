@@ -4,6 +4,11 @@ import Image from "next/image";
 import React from "react";
 import Service from "../components/Service/Service";
 
+export const metadata = {
+  title: "Services - Consultiqo",
+  description: "Consulting Agency Full Site Kit",
+};
+
 const Page = async () => {
   const { data: services } = await axios.get(
     "https://templatehearth-be.onrender.com/services"

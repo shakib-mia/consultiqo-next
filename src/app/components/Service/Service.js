@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import SafeLink from "../SafeLink/SafeLink";
 
 const Service = ({ slug, image, title, id }) => {
   return (
-    <a
-      href={"https://templatehearth.vercel.app/services/" + slug}
+    <SafeLink
+      href={"/services/" + slug}
       target="_blank"
       rel="noreferrer"
       className="border border-light rounded-xl overflow-hidden inline-block"
@@ -45,7 +46,7 @@ const Service = ({ slug, image, title, id }) => {
           />
         </svg>
       </div>
-    </a>
+    </SafeLink>
   );
 };
 

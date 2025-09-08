@@ -143,6 +143,11 @@ input {
   @apply border border-light w-full py-3 px-5 rounded-lg focus:outline-none;
 }
 
-:-webkit-scrollbar {
-  @apply w-0;
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

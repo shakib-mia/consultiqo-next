@@ -1,6 +1,11 @@
 import React from "react";
 import { ScaleLoader } from "react-spinners";
 
+export const metadata = {
+  title: "Loading... - Consultiqo",
+  description: "Consulting Agency Full Site Kit",
+};
+
 const Loading = () => {
   return (
     <div className="h-screen w-screen flex justify-center items-center">

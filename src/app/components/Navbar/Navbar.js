@@ -58,8 +58,8 @@ const Navbar = () => {
             </SafeLink>
           </li>
           <li>
-            <SafeLink href="/features" className="hover:text-purple-600">
-              Features
+            <SafeLink href="/plans" className="hover:text-purple-600">
+              Plans
             </SafeLink>
           </li>
           <li>
@@ -148,10 +148,10 @@ const Navbar = () => {
             </li>
             <li>
               <SafeLink
-                href="/features"
+                href="/plans"
                 className="hover:text-purple-600 inline-block py-2 px-4 w-full"
               >
-                Features
+                Plans
               </SafeLink>
             </li>
             <li>

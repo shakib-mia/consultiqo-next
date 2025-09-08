@@ -71,7 +71,11 @@ const Plans = () => {
 
   return (
     <>
-      <div className="flex justify-center mt-12">
+      <div
+        className="flex justify-center mt-12"
+        data-animate="fade-in"
+        data-delay="200"
+      >
         <Switch
           leftLabel="Yearly"
           rightLabel="Monthly"
@@ -84,6 +88,8 @@ const Plans = () => {
           <div
             className="bg-white rounded-lg shadow-lg hover:shadow transition p-10"
             key={key}
+            data-animate="fade-in-up"
+            data-delay={key * 100 + "ms"}
           >
             <p className="text-sm text-primary font-bold uppercase tracking-widest">
               {plan.planName}
