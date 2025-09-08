@@ -11,7 +11,7 @@ const Navbar = () => {
   const { scrollDirection, lastScrollY } = useScrollDirection();
   const pathname = usePathname();
 
-  // console.log(lastScrollY);
+  console.log(lastScrollY);
 
   const isHome = pathname === "/";
 
@@ -29,8 +29,8 @@ const Navbar = () => {
           lastScrollY > 0
             ? "bg-white !text-black shadow-lg"
             : isHome
-            ? "bg-transparent text-white"
-            : "!text-black bg-white shadow-md"
+            ? "bg-transparent text-white shadow-none"
+            : "!text-black bg-transparent shadow-none"
         }
       `}
     >

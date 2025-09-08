@@ -1,4 +1,4 @@
-/* @import "sweetalert2/src/sweetalert2.scss"; */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/gilroy-bold");
 @import "tailwindcss";
@@ -141,4 +141,8 @@ footer {
 
 input {
   @apply border border-light w-full py-3 px-5 rounded-lg focus:outline-none;
+}
+
+:-webkit-scrollbar {
+  @apply w-0;
 }

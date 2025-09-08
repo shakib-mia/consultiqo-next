@@ -3,9 +3,11 @@
 import { useAos } from "@/app/hooks/useAos";
 import useLenis from "@/app/hooks/useLenis";
 import React from "react";
+import "@/app/lib/scrollAnimate";
 
 const AosLenisProvider = ({ children }) => {
-  // useHearthMotion();
+  // useAos();
+  useLenis();
 
   return <></>;
 };

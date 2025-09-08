@@ -7,6 +7,8 @@ import Footer from "./components/Footer/Footer";
 import Newsletter from "./components/Newsletter/Newsletter";
 import Layout from "./components/Layout/Layout";
 import HearthMotionInitializer from "./components/HearthMotionInitializer/HearthMotionInitializer";
+import AosLenisProvider from "./components/AosWrapper/AosWrapper";
+import Script from "next/script";
 
 export const metadata = {
   title: "Consultiqo",
@@ -17,17 +19,18 @@ export default function RootLayout({ children }) {
   // useHearthMotion();
   return (
     <html lang="en">
+      <head>
+        {/* <link
+          rel="stylesheet"
+          href=""
+        /> */}
+      </head>
       <body>
-        <div id="hm-wrapper">
-          <Navbar />
-          <div id="hm-content">
-            {children}
-            <Newsletter />
-            <Footer />
-          </div>
-        </div>
-
         <HearthMotionInitializer />
+        <Navbar />
+        {children}
+        <Newsletter />
+        <Footer />
       </body>
 
       {/* <Script
@@ -35,7 +38,10 @@ export default function RootLayout({ children }) {
         strategy="afterInteractive"
       /> */}
 
-      {/* <Scr src="https://cdn.jsdelivr.net/gh/shakib-mia/hearthmotion@9af4607/hearthmotion.js" type="module"></Scr> */}
+      {/* <Script
+        src="https://cdn.jsdelivr.net/gh/shakib-mia/hearthmotion-npm@main/src/hearthmotion.js"
+        type="module"
+      ></Script> */}
     </html>
   );
 }

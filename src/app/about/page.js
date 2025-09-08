@@ -12,21 +12,14 @@ const page = () => {
     <>
       <section className="container">
         <div className="lg:w-7/12 mx-auto text-center mt-24">
-          <h1 style={{ opacity: 0 }} data-animate="fade-in-left">
-            Our story
-          </h1>
-          <p
-            style={{ opacity: 0 }}
-            data-animate="fade-in-left"
-            data-delay="100"
-          >
+          <h1 data-animate="fade-in-left">Our story</h1>
+          <p data-animate="fade-in-left" data-delay="100">
             With lots of unique blocks, you can easily build a page without
             coding. Build your next consultancy website within few minutes.
           </p>
         </div>
 
         <Image
-          style={{ opacity: 0 }}
           data-animate="fade-in-left"
           data-delay="200"
           src={about}
@@ -36,25 +29,17 @@ const page = () => {
       </section>
 
       <section className="container grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
-        <h2 style={{ opacity: 0 }} data-animate="fade-in-left" data-delay="100">
+        <h2 data-animate="fade-in-left" data-delay="100">
           We are here to help the customers to get their success.
         </h2>
 
         <aside className="space-y-4">
-          <p
-            style={{ opacity: 0 }}
-            data-animate="fade-in-right"
-            data-delay="100"
-          >
+          <p data-animate="fade-in-right" data-delay="100">
             We share common trends and strategies for improving your rental
             income and making sure you stay in high demand of service.{" "}
           </p>
 
-          <p
-            style={{ opacity: 0 }}
-            data-animate="fade-in-right"
-            data-delay="100"
-          >
+          <p data-animate="fade-in-right" data-delay="100">
             With lots of unique blocks, you can easily build a page without
             coding. Build your next landing page. With lots of unique blocks,
             you can easily build a page without coding any other page.
@@ -70,7 +55,6 @@ const page = () => {
                 src={coder1}
                 alt="coder1"
                 className="w-full"
-                style={{ opacity: 0 }}
                 data-animate="fade-in-left"
                 data-delay="300"
               />
@@ -78,7 +62,6 @@ const page = () => {
                 src={coder3}
                 alt="coder3"
                 className="w-full"
-                style={{ opacity: 0 }}
                 data-animate="fade-in-left"
                 data-delay="300"
               />
@@ -88,7 +71,6 @@ const page = () => {
                 src={coder2}
                 alt="coder2"
                 className="w-full"
-                style={{ opacity: 0 }}
                 data-animate="fade-in-left"
                 data-delay="100"
               />
@@ -96,22 +78,21 @@ const page = () => {
                 src={coder4}
                 alt="coder4"
                 className="w-full"
-                style={{ opacity: 0 }}
                 data-animate="fade-in-left"
                 data-delay="100"
               />
             </div>
           </aside>
           <aside className="space-y-4">
-            <h2 style={{ opacity: 0 }} data-animate="fade-in-right">
+            <h2 data-animate="fade-in-right">
               High skilled coders from worldwide.
             </h2>
-            <p style={{ opacity: 0 }} data-animate="fade-in-right">
+            <p data-animate="fade-in-right">
               We share common trends and strategies for improving your rental
               income and making sure you stay in high demand of service.
             </p>
 
-            <p style={{ opacity: 0 }} data-animate="fade-in-right">
+            <p data-animate="fade-in-right">
               With lots of unique blocks, you can easily build a page without
               coding. Build your next landing page. With lots of unique blocks,
               you can easily build a page without coding any other page.

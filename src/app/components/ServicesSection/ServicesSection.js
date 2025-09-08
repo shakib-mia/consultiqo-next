@@ -22,7 +22,9 @@ const ServicesSection = () => {
         <Services />
       </div>
       <div className="text-center mt-10">
-        <Button href={"/services"}>View All Services</Button>
+        <Button data-animate="fade-in-left" href={"/services"}>
+          View All Services
+        </Button>
       </div>
     </section>
   );

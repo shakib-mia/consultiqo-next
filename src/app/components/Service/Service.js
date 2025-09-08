@@ -8,8 +8,7 @@ const Service = ({ slug, image, title, id }) => {
       target="_blank"
       rel="noreferrer"
       className="border border-light rounded-xl overflow-hidden inline-block"
-      data-animate="fade-in-up"
-      data-delay={(id % 3) * 100}
+      data-aos="fade-up"
     >
       {/* <!-- Service Image --> */}
       <Image

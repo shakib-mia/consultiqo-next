@@ -38,13 +38,13 @@ const NewsletterForm = () => {
         className="h-fit"
         id="email"
         placeholder="Enter Your Email Address"
-        data-animate="fade-in-right"
+        // data-animate="fade-in-right"
       />
       <Button
         type="submit"
         className="h-fit"
-        data-animate="fade-in-right"
-        data-delay="500"
+        // data-animate="fade-in-right"
+        // data-delay="500"
       >
         Subscribe
       </Button>
