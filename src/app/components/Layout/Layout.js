@@ -16,7 +16,8 @@ const Layout = ({ id, children }) => {
     // 2️⃣ Create new script
     const script = document.createElement("script");
     script.id = "hearthmotion-script"; // give an ID so we can remove later
-    script.src = "http://127.0.0.1:5500/src/hearthmotion.js";
+    script.src =
+      "https://cdn.jsdelivr.net/gh/shakib-mia/hearthmotion-npm@main/src/hearthmotion.js";
     script.async = true; // recommended for scripts
     document.body.appendChild(script);
 

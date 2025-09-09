@@ -32,16 +32,6 @@ export default function RootLayout({ children }) {
         <Newsletter />
         <Footer />
       </body>
-
-      {/* <Script
-        src="http://127.0.0.1:5500/hearthmotion-core.js"
-        strategy="afterInteractive"
-      /> */}
-
-      {/* <Script
-        src="https://cdn.jsdelivr.net/gh/shakib-mia/hearthmotion-npm@main/src/hearthmotion.js"
-        type="module"
-      ></Script> */}
     </html>
   );
 }
