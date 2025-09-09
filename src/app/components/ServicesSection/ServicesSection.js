@@ -12,8 +12,8 @@ const ServicesSection = () => {
           Services we offer for you
         </h3>
         <p data-animate="fade-in-left">
-          With lots of unique blocks, you can easily build a page without
-          coding. Build your next landing page.
+          From design to marketing, we provide tailored services to grow your
+          business faster and smarter.
         </p>
       </div>
 

@@ -46,8 +46,8 @@ const Contact = () => {
 
               {/* <!-- Description --> */}
               <p data-animate="fade-in-left">
-                With lots of unique blocks, you can easily build a page without
-                coding. Build your next landing page so quickly with Albino.
+                Get expert guidance today—book your free consultancy session and
+                take the first step toward success.
               </p>
             </aside>
 

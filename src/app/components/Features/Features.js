@@ -14,8 +14,8 @@ const Features = () => {
             Why you should choose us?
           </h3>
           <p data-animate="fade-in-left">
-            With lots of unique blocks, you can easily build a page without
-            coding. Build your next landing page.
+            Our simplified process, expert team, and proven strategies ensure
+            you get results without hassle.
           </p>
         </div>
 
@@ -41,8 +41,8 @@ const Features = () => {
                 <aside className="w-9/10">
                   <h6>Easy Booking</h6>
                   <p className="mt-2 lg:mt-4">
-                    With lots of unique blocks, you can easily build a page
-                    without coding.
+                    Schedule your consultation in just a few clicks—quick,
+                    simple, and hassle-free.
                   </p>
                 </aside>
               </li>
@@ -59,8 +59,8 @@ const Features = () => {
                 <aside className="w-9/10">
                   <h6>Free Expert Opinion</h6>
                   <p className="mt-2 lg:mt-4">
-                    With lots of unique blocks, you can easily build a page
-                    without coding.
+                    Get professional advice from our experienced consultants at
+                    no extra cost.
                   </p>
                 </aside>
               </li>
@@ -77,8 +77,8 @@ const Features = () => {
                 <aside className="w-9/10">
                   <h6>Get Your Results</h6>
                   <p className="mt-2 lg:mt-4">
-                    With lots of unique blocks, you can easily build a page
-                    without coding.
+                    Achieve measurable results faster with our proven strategies
+                    and expert guidance.
                   </p>
                 </aside>
               </li>

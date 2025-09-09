@@ -26,8 +26,8 @@ const Header = () => {
               data-animate="fade-in-left"
               data-delay="100"
             >
-              With lots of unique blocks, you can easily build a page without
-              coding. Build your next consultancy website within few minutes.
+              Easily launch your consultancy website in minutes with
+              ready-to-use sections—no coding required.
             </p>
 
             <Button
