@@ -9,7 +9,8 @@ const Service = ({ slug, image, title, id }) => {
       target="_blank"
       rel="noreferrer"
       className="border border-light rounded-xl overflow-hidden inline-block"
-      data-aos="fade-up"
+      data-animate="fade-in-up"
+      data-delay={((id - 3) % 3) * 100}
     >
       {/* <!-- Service Image --> */}
       <Image

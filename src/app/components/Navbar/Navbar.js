@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import Button from "../Button/Button";
 import useScrollDirection from "@/app/hooks/useScrollDirection";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import SafeLink from "../SafeLink/SafeLink";
 
@@ -10,8 +9,6 @@ const Navbar = () => {
   const [phoneNav, showPhoneNav] = useState(false);
   const { scrollDirection, lastScrollY } = useScrollDirection();
   const pathname = usePathname();
-
-  console.log(lastScrollY);
 
   const isHome = pathname === "/";
 
