@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Button from "../Button/Button";
 import useScrollDirection from "@/app/hooks/useScrollDirection";
 import { usePathname } from "next/navigation";
@@ -12,11 +12,15 @@ const Navbar = () => {
 
   const isHome = pathname === "/";
 
-  // useEffect(() => {
-  //   if (window.HearthMotion) {
-  //     setLenis(window.HearthMotion.getLenis());
-  //   }
-  // }, []);
+  // 🔹 Navbar items array
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Plans", href: "/plans" },
+    { name: "Contact", href: "/contact" },
+  ];
+
   return (
     <nav
       id="navbar"
@@ -39,31 +43,18 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 font-normal">
-          <li>
-            <SafeLink href="/" className="hover:text-purple-600">
-              Home
-            </SafeLink>
-          </li>
-          <li>
-            <SafeLink href="/about" className="hover:text-purple-600">
-              About
-            </SafeLink>
-          </li>
-          <li>
-            <SafeLink href="/services" className="hover:text-purple-600">
-              Services
-            </SafeLink>
-          </li>
-          <li>
-            <SafeLink href="/plans" className="hover:text-purple-600">
-              Plans
-            </SafeLink>
-          </li>
-          <li>
-            <SafeLink href="/contact" className="hover:text-purple-600">
-              Contact
-            </SafeLink>
-          </li>
+          {navItems.map((item) => (
+            <li key={item.href}>
+              <SafeLink
+                href={item.href}
+                className={`${
+                  item.href === pathname && "text-purple-600"
+                } hover:text-purple-600`}
+              >
+                {item.name}
+              </SafeLink>
+            </li>
+          ))}
         </ul>
 
         {/* CTA & Hamburger */}
@@ -119,46 +110,16 @@ const Navbar = () => {
           }`}
         >
           <ul className="flex flex-col divide-y font-medium text-gray-700">
-            <li>
-              <SafeLink
-                href="/"
-                className="hover:text-purple-600 inline-block py-2 px-4 w-full"
-              >
-                Home
-              </SafeLink>
-            </li>
-            <li>
-              <SafeLink
-                href="/about"
-                className="hover:text-purple-600 inline-block py-2 px-4 w-full"
-              >
-                About
-              </SafeLink>
-            </li>
-            <li>
-              <SafeLink
-                href="/services"
-                className="hover:text-purple-600 inline-block py-2 px-4 w-full"
-              >
-                Services
-              </SafeLink>
-            </li>
-            <li>
-              <SafeLink
-                href="/plans"
-                className="hover:text-purple-600 inline-block py-2 px-4 w-full"
-              >
-                Plans
-              </SafeLink>
-            </li>
-            <li>
-              <SafeLink
-                href="/contact"
-                className="hover:text-purple-600 inline-block py-2 px-4 w-full"
-              >
-                Contact
-              </SafeLink>
-            </li>
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <SafeLink
+                  href={item.href}
+                  className="hover:text-purple-600 inline-block py-2 px-4 w-full"
+                >
+                  {item.name}
+                </SafeLink>
+              </li>
+            ))}
             <li className="container py-3">
               <Button
                 href="https://templatehearth.vercel.app/contact"

@@ -21,7 +21,7 @@ export default function Switch({
   };
 
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex items-center gap-3" data-animate="fade-in">
       <span className={`text-xl transition-colors`}>{leftLabel}</span>
 
       <button

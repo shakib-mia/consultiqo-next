@@ -28,8 +28,9 @@ const Team = () => {
       <div className="lg:w-7/12 mx-auto text-center mt-24">
         <h1 data-animate="fade-in-left">Meet our team</h1>
         <p data-animate="fade-in-left">
-          With lots of unique blocks, you can easily build a page without
-          coding. Build your next consultancy website within few minutes.
+          Behind Consultiqo is a passionate team of leaders and innovators
+          dedicated to delivering quality service and impactful results for
+          every client.
         </p>
       </div>
 

@@ -9,10 +9,6 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import amazon from "./../../assets/images/clients/amazon.jpg";
-import Google from "./../../assets/images/clients/Google.jpg";
-import Oval from "./../../assets/images/testimonial/Oval.jpg";
-
 const Testimonials = () => {
   const testimonials = [
     {

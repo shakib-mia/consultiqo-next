@@ -31,6 +31,9 @@ export default function SafeLink({
       // Navigate after cleanup
       setTimeout(() => {
         router.push(href);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 11);
       }, 10);
     }
   };

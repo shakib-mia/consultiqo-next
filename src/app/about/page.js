@@ -19,8 +19,8 @@ const page = () => {
         <div className="lg:w-7/12 mx-auto text-center mt-24">
           <h1 data-animate="fade-in-left">Our story</h1>
           <p data-animate="fade-in-left" data-delay="100">
-            With lots of unique blocks, you can easily build a page without
-            coding. Build your next consultancy website within few minutes.
+            We help businesses and individuals launch their consultancy journey
+            quickly with smart solutions designed for success.
           </p>
         </div>
 
@@ -45,9 +45,10 @@ const page = () => {
           </p>
 
           <p data-animate="fade-in-right" data-delay="100">
-            With lots of unique blocks, you can easily build a page without
-            coding. Build your next landing page. With lots of unique blocks,
-            you can easily build a page without coding any other page.
+            Our strategies combine innovation and proven methods, helping
+            clients achieve consistent growth and stay ahead in a competitive
+            market. From websites to full-scale solutions, we make your ideas a
+            reality without complexity.
           </p>
         </aside>
       </section>
@@ -98,9 +99,9 @@ const page = () => {
             </p>
 
             <p data-animate="fade-in-right">
-              With lots of unique blocks, you can easily build a page without
-              coding. Build your next landing page. With lots of unique blocks,
-              you can easily build a page without coding any other page.
+              Our global team of highly skilled coders brings diverse expertise
+              to build scalable, secure, and efficient digital solutions that
+              drive long-term success.
             </p>
           </aside>
         </div>
