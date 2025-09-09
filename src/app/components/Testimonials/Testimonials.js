@@ -74,8 +74,9 @@ const Testimonials = () => {
                     src={t.image}
                     width={52}
                     height={52}
-                    alt="Client testimonial photo"
+                    alt={t.name}
                     className="rounded-full"
+                    unoptimized
                   />
                 </aside>
                 <aside className="text-left">
