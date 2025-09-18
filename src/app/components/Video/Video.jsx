@@ -19,7 +19,7 @@ const Video = () => {
             <button
               //   onclick="closeModal()"
               onClick={() => showVideo(false)}
-              className="absolute -top-16 right-0 lg:-right-16 !bg-error !border-error hover:!bg-white hover:!text-error rounded-full w-12 flex justify-center items-center aspect-square text-black font-bold text-2xl"
+              className="absolute -top-16 right-0 lg:-right-16 !bg-error !border-error text-white hover:!bg-white hover:!text-error rounded-full w-12 flex justify-center items-center aspect-square transition cursor-pointer font-bold text-2xl"
             >
               ✕
             </button>
@@ -31,8 +31,8 @@ const Video = () => {
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
               src={
                 video
                   ? "https://www.youtube.com/embed/6BTOHtZkook?si=V2WY_k8IwmcoHL8v"

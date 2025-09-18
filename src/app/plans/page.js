@@ -1,10 +1,11 @@
 import React from "react";
 import Plans from "../components/Plans/Plans";
+import Faq from "../components/Faq/Faq";
 
 const Page = () => {
   return (
     <>
-      <section className="container">
+      <div className="container pt-14 lg:pt-20">
         <div className="lg:w-7/12 mx-auto text-center mt-24">
           <h1 data-animate="fade-in-left">Pricing & Plans</h1>
           <p data-animate="fade-in-left" data-delay="100">
@@ -14,7 +15,9 @@ const Page = () => {
         </div>
 
         <Plans />
-      </section>
+
+        <Faq />
+      </div>
     </>
   );
 };

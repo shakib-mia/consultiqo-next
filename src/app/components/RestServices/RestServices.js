@@ -27,7 +27,9 @@ const RestServices = async ({ slug }) => {
 
             <aside className="lg:w-2/3">
               <h6 className="font-semibold">{item.title}</h6>
-              <p>{item.shortDescription.slice(0, 30)}...</p>
+              <p title={item.shortDescription}>
+                {item.shortDescription.slice(0, 30)}...
+              </p>
             </aside>
           </Link>
         ))}

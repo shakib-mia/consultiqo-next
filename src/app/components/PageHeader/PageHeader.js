@@ -10,7 +10,7 @@ export default function PageHeader({ description, title }) {
   }, []);
 
   return (
-    <div className="bg-primary-light pt-20 lg:pt-32 pb-10 text-center">
+    <div className="pt-20 lg:pt-32 text-center">
       <div className="container">
         <h1 className="text-2xl lg:text-6xl font-bold mb-2 text-gray-900 leading-[1.5]">
           {title ||

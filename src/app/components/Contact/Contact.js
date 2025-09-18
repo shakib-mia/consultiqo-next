@@ -1,6 +1,7 @@
 import React from "react";
 import consultancyBg from "./../../assets/images/consultancy-bg.png";
 import Button from "../Button/Button";
+import Input from "../Input/Input";
 
 const Contact = () => {
   return (
@@ -58,47 +59,34 @@ const Contact = () => {
               data-animate="fade-in"
             >
               <div className="space-y-4">
-                {/* <!-- Name input --> */}
-                <div className="space-y-2" data-animate="fade-in-right">
-                  <label className="inline-block font-bold" htmlFor="name">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="i.e. John Doe"
-                    required
-                  />
-                </div>
+                <Input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="i.e. John Doe"
+                  required
+                  label="name"
+                  data-animate="fade-in-right"
+                />
+                <Input
+                  label="Email"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="i.e. john@mail.com"
+                  required
+                  data-animate="fade-in-right"
+                />
 
-                {/* <!-- Email input --> */}
-                <div className="space-y-2" data-animate="fade-in-right">
-                  <label className="inline-block font-bold" htmlFor="email">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="i.e. john@mail.com"
-                    required
-                  />
-                </div>
-
-                {/* <!-- Phone input --> */}
-                <div className="space-y-2" data-animate="fade-in-right">
-                  <label className="inline-block font-bold" htmlFor="phone">
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    placeholder="i.e. 123-456-7890"
-                    required
-                  />
-                </div>
+                <Input
+                  label="Phone"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="i.e. 123-456-7890"
+                  required
+                  data-animate="fade-in-right"
+                />
 
                 {/* <!-- Service select --> */}
                 <div className="space-y-2" data-animate="fade-in-right">
