@@ -11,7 +11,7 @@ import AosLenisProvider from "./components/AosWrapper/AosWrapper";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Consultiqo",
+  title: "Consultiqo - Get help from the expert consultants.",
   description: "Consulting Agency Full Site Kit",
 };
 
@@ -19,12 +19,6 @@ export default function RootLayout({ children }) {
   // useHearthMotion();
   return (
     <html lang="en">
-      <head>
-        {/* <link
-          rel="stylesheet"
-          href=""
-        /> */}
-      </head>
       <body>
         <HearthMotionInitializer />
         <Navbar />

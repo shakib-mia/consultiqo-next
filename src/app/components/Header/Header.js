@@ -31,7 +31,7 @@ const Header = () => {
             </p>
 
             <Button
-              href="https://templatehearth.vercel.app/"
+              href="/contact"
               data-animate="fade-in-left"
               data-delay="400"
               className="button inline-block"
