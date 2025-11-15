@@ -3,21 +3,25 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Service from "../components/Service/Service";
+import { servicesCollection } from "../lib/mongodb";
 
 export const metadata = {
   title: "Services - Consultiqo",
   description: "Consulting Agency Full Site Kit",
 };
 
+export async function generateStaticParams() {
+  const services = await servicesCollection.find({}).toArray();
+
+  return services.map((service) => ({
+    slug: service.slug,
+  }));
+}
+
 const Page = async () => {
-  const { data: services } = await axios.get(
-    "https://templatehearth-be.onrender.com/services"
-  );
+  const services = await servicesCollection.find({}).toArray();
 
   return (
-    // <div id="hm-wrapper">
-    //   <div id="hm-content">
-
     <section className="container">
       <div className="lg:w-7/12 mx-auto text-center mt-24">
         <h1 data-animate="fade-in-left">Our Services</h1>
@@ -33,8 +37,6 @@ const Page = async () => {
         ))}
       </section>
     </section>
-    //   </div>
-    // </div>
   );
 };
 

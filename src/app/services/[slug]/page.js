@@ -1,5 +1,6 @@
 import PageHeader from "@/app/components/PageHeader/PageHeader";
 import RestServices from "@/app/components/RestServices/RestServices";
+import { servicesCollection } from "@/app/lib/mongodb";
 import axios from "axios";
 import Image from "next/image";
 import React from "react";
@@ -26,11 +27,7 @@ export async function generateMetadata({ params }) {
 
 const Service = async ({ params }) => {
   const { slug } = await params;
-  // console.log({ slug });
-
-  const service = (
-    await axios.get("https://templatehearth-be.onrender.com/services/" + slug)
-  ).data;
+  const service = await servicesCollection.findOne({ slug });
 
   if (!service) {
     return <div>Service Not Found</div>;

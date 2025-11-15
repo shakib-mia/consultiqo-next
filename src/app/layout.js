@@ -9,6 +9,7 @@ import Layout from "./components/Layout/Layout";
 import HearthMotionInitializer from "./components/HearthMotionInitializer/HearthMotionInitializer";
 import AosLenisProvider from "./components/AosWrapper/AosWrapper";
 import Script from "next/script";
+import Button from "./components/Button/Button";
 
 export const metadata = {
   title: "Consultiqo - Get help from the expert consultants.",
@@ -25,6 +26,12 @@ export default function RootLayout({ children }) {
         {children}
         <Newsletter />
         <Footer />
+
+        {/* <div className="fixed bottom-4 right-4">
+          <Button href="/" className="!rounded-full !px-6">
+            Get it Now
+          </Button>
+        </div> */}
       </body>
     </html>
   );
