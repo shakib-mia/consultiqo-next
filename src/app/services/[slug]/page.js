@@ -5,24 +5,68 @@ import axios from "axios";
 import Image from "next/image";
 import React from "react";
 
+// -------------------------
+// 1) PRE-GENERATE ALL SLUGS
+// -------------------------
+export async function generateStaticParams() {
+  try {
+    const services = await servicesCollection.find().toArray();
+
+    return services.map((t) => ({
+      slug: t.slug,
+    }));
+  } catch (e) {
+    return [];
+  }
+}
+
+// -------------------------
+// 2) SEO METADATA
+// -------------------------
 export async function generateMetadata({ params }) {
   const { slug } = await params;
 
-  const service = (
-    await axios.get("https://templatehearth-be.onrender.com/services/" + slug)
-  ).data;
+  try {
+    const service = await servicesCollection.findOne({ slug });
 
-  if (!service) {
+    if (!service) {
+      return {
+        title: "Service Not Found",
+        description: "This service does not exist in our collection.",
+      };
+    }
+
     return {
-      title: "Not Found",
-      description: "",
+      title: service.title,
+      description: service.shortDescription,
+      openGraph: {
+        title: service.title,
+        description: service.shortDescription,
+        url: `https://servicehearth.vercel.app/services/${slug}`,
+        type: "article",
+        images: [
+          {
+            url: service.image, // thumbnail URL
+            width: 1200,
+            height: 630,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: service.title,
+        description: service.shortDescription,
+        images: [service.image],
+      },
+      alternates: {
+        canonical: `/services/${slug}`,
+      },
+    };
+  } catch (e) {
+    return {
+      title: "service Not Found",
     };
   }
-
-  return {
-    title: service.title + " - Consultiqo",
-    description: service.shortDescription || "",
-  };
 }
 
 const Service = async ({ params }) => {
