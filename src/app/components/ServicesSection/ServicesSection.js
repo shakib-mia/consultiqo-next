@@ -18,9 +18,7 @@ const ServicesSection = () => {
       </div>
 
       {/* <!-- Services Grid --> */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-12">
-        <Services />
-      </div>
+      <Services />
       <div className="text-center mt-10">
         <Button data-animate="fade-in-left" href={"/services"}>
           View All Services
