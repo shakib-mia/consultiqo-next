@@ -13,7 +13,7 @@ export async function generateStaticParams({ route }) {
 }
 
 const Services = async ({ route }) => {
-  const limit = route || 6;
+  const limit = route ? 0 : 6;
   const services = await servicesCollection.find({}).limit(limit).toArray();
 
   return (
