@@ -7,7 +7,7 @@ const ServicesSection = () => {
     // <!-- Services Section -->
     <section className="container" id="services">
       {/* <!-- Section Heading + Intro Text --> */}
-      <div className="lg:w-1/2 mx-auto text-center">
+      <div className="lg:w-1/2 mx-auto text-center mb-10">
         <h3 className="mb-4" data-animate="fade-in-left">
           Services we offer for you
         </h3>

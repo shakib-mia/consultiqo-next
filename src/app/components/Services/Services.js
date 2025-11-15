@@ -17,7 +17,11 @@ const Services = async ({ route }) => {
   const services = await servicesCollection.find({}).limit(limit).toArray();
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-0">
+    <section
+      className={`${
+        route || "!py-0"
+      } grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-0`}
+    >
       {services.slice(0, 6).map((service, key) => (
         <Service {...service} key={service._id} id={key} />
       ))}
