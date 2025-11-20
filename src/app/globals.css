@@ -10,31 +10,31 @@
   --container-width-xl: 1110px;
 
   --text-heading-1: 60px;
-  --text-heading-1--line-height: 130%;
+  /* --text-heading-1--line-height: 130%; */
 
   --text-heading-2: 48px;
-  --text-heading-2--line-height: 130%;
+  /* --text-heading-2--line-height: 130%; */
 
   --text-heading-3: 36px;
-  --text-heading-3--line-height: 130%;
+  /* --text-heading-3--line-height: 130%; */
 
   --text-heading-4: 32px;
-  --text-heading-4--line-height: 130%;
+  /* --text-heading-4--line-height: 130%; */
 
   --text-heading-5: 24px;
-  --text-heading-5--line-height: 130%;
+  /* --text-heading-5--line-height: 130%; */
 
   --text-heading-6: 21px;
-  --text-heading-6--line-height: 130%;
+  /* --text-heading-6--line-height: 130%; */
 
   --text-lg: 18px;
-  --text-lg--line-height: 170%;
+  /* --text-lg--line-height: 170%; */
 
   --text-base: 16px;
-  --text-base--line-height: 170%;
+  /* --text-base--line-height: 170%; */
 
   --text-sm: 14px;
-  --text-sm--line-height: 170%;
+  /* --text-sm--line-height: 170%; */
 
   --text-button: 13px;
   --text-button--letter-spacing: 1.63px;

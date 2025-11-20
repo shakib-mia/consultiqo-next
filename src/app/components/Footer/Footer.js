@@ -97,6 +97,7 @@ const Footer = () => {
             <li className="flex gap-2 items-center text-white">
               {/* <!-- Facebook --> */}
               <a
+                name="Facebook"
                 href="https://www.facebook.com/templatehearth"
                 target="_blank"
                 rel="no-referrer"
@@ -108,6 +109,7 @@ const Footer = () => {
 
               {/* <!-- Twitter / X --> */}
               <a
+                name="Twitter / X"
                 href="https://x.com/TemplateHearth/"
                 target="_blank"
                 rel="no-referrer"
@@ -118,6 +120,7 @@ const Footer = () => {
 
               {/* <!-- LinkedIn --> */}
               <a
+                name="LinkedIn"
                 href="https://www.linkedin.com/in/templatehearth/"
                 target="_blank"
                 rel="no-referrer"
@@ -129,6 +132,7 @@ const Footer = () => {
 
               {/* <!-- Gumroad --> */}
               <a
+                name="Gumroad"
                 href="https://templatehearth.gumroad.com/"
                 target="_blank"
                 rel="no-referrer"

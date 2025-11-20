@@ -37,12 +37,12 @@ export async function generateMetadata({ params }) {
     }
 
     return {
-      title: service.title,
+      title: `${service.title} - Consultiqo`,
       description: service.shortDescription,
       openGraph: {
-        title: service.title,
+        title: `${service.title} - Consultiqo`,
         description: service.shortDescription,
-        url: `https://servicehearth.vercel.app/services/${slug}`,
+        url: `https://templatehearth.vercel.app/services/${slug}`,
         type: "article",
         images: [
           {
@@ -54,7 +54,7 @@ export async function generateMetadata({ params }) {
       },
       twitter: {
         card: "summary_large_image",
-        title: service.title,
+        title: `${service.title} - Consultiqo`,
         description: service.shortDescription,
         images: [service.image],
       },
@@ -80,7 +80,7 @@ const Service = async ({ params }) => {
   return (
     <>
       <PageHeader
-        title={service.title}
+        title={`${service.title} - Consultiqo`}
         description={service.shortDescription}
       />
       <section className="container mx-auto max-w-7xl px-4 flex flex-col lg:flex-row gap-10">
@@ -102,25 +102,25 @@ const Service = async ({ params }) => {
               key={idx}
               className="mb-6 !py-0"
             >
-              <h4 className="font-semibold mb-3 text-gray-800">
+              <h5 className="font-medium mb-3 text-gray-800">
                 {section.title}
-              </h4>
+              </h5>
               <p className="text-gray-600 leading-relaxed text-justify">
                 {section.description}
               </p>
             </section>
           ))}
 
-          <h4 className="font-semibold mb-3 text-gray-800">Conclusion</h4>
+          <h5 className="font-medium mb-3 text-gray-800">Conclusion</h5>
           <p className="text-gray-600 leading-relaxed">{service.conclusion}</p>
         </main>
 
         <aside className="lg:w-4/12 w-full sticky top-20 self-start h-fit space-y-8">
           <div className="bg-gray-50 rounded-lg p-6 shadow-md">
-            <h3 className="text-xl font-semibold mb-4 text-gray-800">
+            <h3 className="text-xl font-medium mb-4 text-gray-800">
               Quick Links
             </h3>
-            <ul className="space-y-3 mb-6">
+            <ul className="space-y-1 mb-6">
               {service.features?.map((section, idx) => (
                 <li key={idx}>
                   <a
@@ -128,7 +128,7 @@ const Service = async ({ params }) => {
                       .split(" ")
                       .join("-")
                       .toLowerCase()}`}
-                    className="text-blue-600 hover:text-blue-800 transition-colors"
+                    className="text-blue-600 hover:text-blue-800 transition-colors text-base"
                   >
                     {section.title}
                   </a>
@@ -139,7 +139,7 @@ const Service = async ({ params }) => {
 
           {/* এখানে বাকি সার্ভিস গুলো দেখানো */}
           <div className="bg-gray-50 rounded-lg p-6 shadow-md">
-            <h3 className="text-xl font-semibold mb-4 text-gray-800">
+            <h3 className="text-xl font-medium mb-4 text-gray-800">
               More Services
             </h3>
             <RestServices slug={slug} />
