@@ -80,7 +80,7 @@ const Service = async ({ params }) => {
   return (
     <>
       <PageHeader
-        title={`${service.title} - Consultiqo`}
+        title={`${service.title}`}
         description={service.shortDescription}
       />
       <section className="container mx-auto max-w-7xl px-4 flex flex-col lg:flex-row gap-10">
