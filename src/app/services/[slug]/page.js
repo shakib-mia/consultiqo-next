@@ -42,7 +42,7 @@ export async function generateMetadata({ params }) {
       openGraph: {
         title: `${service.title} - Consultiqo`,
         description: service.shortDescription,
-        url: `https://templatehearth.vercel.app/services/${slug}`,
+        url: `https://consultiqo-next.vercel.app/services/${slug}`,
         type: "article",
         images: [
           {
