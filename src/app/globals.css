@@ -87,17 +87,6 @@ body {
   @apply font-gilroy-regular text-lg text-dark;
 }
 
-/* Hide scrollbar for all elements */
-/* * {
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
-} */
-
-/* WebKit-based browsers (Chrome, Safari, Opera) */
-/* *::-webkit-scrollbar {
-  display: none;
-} */
-
 h1,
 h2,
 h3,
@@ -151,4 +140,9 @@ textarea {
 * {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+[data-animate] {
+  @apply opacity-0;
+  transition: opacity 0.5s ease;
 }

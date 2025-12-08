@@ -1,7 +1,6 @@
 import PageHeader from "@/app/components/PageHeader/PageHeader";
 import RestServices from "@/app/components/RestServices/RestServices";
 import { servicesCollection } from "@/app/lib/mongodb";
-import axios from "axios";
 import Image from "next/image";
 import React from "react";
 

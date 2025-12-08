@@ -1,10 +1,8 @@
-import axios from "axios";
-import Image from "next/image";
 import React from "react";
 import Service from "../Service/Service";
 import { servicesCollection } from "@/app/lib/mongodb";
 
-export async function generateStaticParams({ route }) {
+export async function generateStaticParams() {
   const services = await servicesCollection.find({}).toArray();
 
   return services.map((service) => ({
@@ -22,8 +20,8 @@ const Services = async ({ route }) => {
         route || "!py-0"
       } grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-0`}
     >
-      {services.map((service, key) => (
-        <Service {...service} key={service._id} id={key} />
+      {services.map(({ _id, ...service }, key) => (
+        <Service {...service} key={_id} id={key} />
       ))}
     </section>
   );
