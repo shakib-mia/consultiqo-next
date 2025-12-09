@@ -11,7 +11,7 @@ const Member = ({ img, name, role, id }) => {
         alt={name}
         className="w-full h-auto rounded-lg"
       />
-      <h6 className="mt-4 font-semibold">{name}</h6>
+      <h6 className="mt-4 font-medium">{name}</h6>
       <p className="text-gray-600">{role}</p>
     </article>
   );
