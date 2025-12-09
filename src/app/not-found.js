@@ -1,5 +1,6 @@
 // app/not-found.jsx
 import Link from "next/link";
+import Button from "./components/Button/Button";
 
 export default function NotFound() {
   return (
@@ -9,36 +10,29 @@ export default function NotFound() {
           {/* Text column */}
           <div className="w-full lg:w-1/2">
             <div className="max-w-xl">
-              <h1
-                className="text-4xl md:text-5xl lg:text-6xl font-gilroy-bold text-dark leading-tight mb-4"
-                data-animate
-              >
-                Oops. Page Not Found.
+              <h1 className="text-7xl! mb-2" data-animate="shake-x">
+                Oops
               </h1>
+              <h2>Page Not Found.</h2>
 
-              <p className="text-lg text-gray-700 mb-6" data-animate>
+              <p className="text-lg text-gray-700 mt-4 mb-6" data-animate>
                 The link might be incorrect, or the page may have been moved. No
                 worries — you can return to the homepage using the button below
                 or contact support if you need help.
               </p>
 
-              <div className="flex flex-wrap gap-3">
-                <Link
-                  href="/"
-                  className="inline-block bg-primary text-white px-6 py-3 rounded-lg font-gilroy-medium hover:brightness-95 transition"
-                >
-                  Back to Home
-                </Link>
+              <div className="flex flex-wrap gap-3" data-animate>
+                <Button href="/">Back to Home</Button>
 
                 <Link
                   href="/contact"
-                  className="inline-block border border-primary text-primary px-6 py-3 rounded-lg font-gilroy-medium hover:bg-primary hover:text-white transition"
+                  className="inline-block border border-primary text-primary px-4 py-2 rounded-lg font-gilroy-medium hover:bg-primary hover:text-white transition"
                 >
                   Contact Support
                 </Link>
               </div>
 
-              <div className="mt-8 text-sm text-gray-500">
+              <div className="mt-8 text-sm text-gray-500" data-animate>
                 <p>Try these:</p>
                 <ul className="list-disc list-inside mt-2">
                   <li>Check the URL for typos</li>
