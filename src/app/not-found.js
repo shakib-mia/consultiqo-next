@@ -10,18 +10,28 @@ export default function NotFound() {
           {/* Text column */}
           <div className="w-full lg:w-1/2">
             <div className="max-w-xl">
-              <h1 className="text-7xl! mb-2" data-animate="shake-x">
+              <h1 className="text-7xl! mb-2" data-animate="fade-in">
                 Oops
               </h1>
-              <h2>Page Not Found.</h2>
+              <h2 data-animate="fade-in" data-delay="100ms">
+                Page Not Found.
+              </h2>
 
-              <p className="text-lg text-gray-700 mt-4 mb-6" data-animate>
+              <p
+                className="text-lg text-gray-700 mt-4 mb-6"
+                data-animate="fade-in"
+                data-delay="200ms"
+              >
                 The link might be incorrect, or the page may have been moved. No
                 worries — you can return to the homepage using the button below
                 or contact support if you need help.
               </p>
 
-              <div className="flex flex-wrap gap-3" data-animate>
+              <div
+                className="flex flex-wrap gap-3"
+                data-animate="fade-in"
+                data-delay="300ms"
+              >
                 <Button href="/">Back to Home</Button>
 
                 <Link
@@ -32,7 +42,11 @@ export default function NotFound() {
                 </Link>
               </div>
 
-              <div className="mt-8 text-sm text-gray-500" data-animate>
+              <div
+                className="mt-8 text-sm text-gray-500"
+                data-animate="fade-in"
+                data-delay="400ms"
+              >
                 <p>Try these:</p>
                 <ul className="list-disc list-inside mt-2">
                   <li>Check the URL for typos</li>
