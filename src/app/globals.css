@@ -83,6 +83,10 @@
   }
 }
 
+* {
+  @apply selection:bg-primary selection:text-white!;
+}
+
 body {
   @apply font-gilroy-regular text-lg text-dark;
 }

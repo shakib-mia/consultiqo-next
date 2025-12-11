@@ -59,11 +59,7 @@ const Navbar = () => {
 
         {/* CTA & Hamburger */}
         <div className="flex items-center">
-          <Button
-            className="!hidden md:!block"
-            href="https://templatehearth.vercel.app/contact"
-            target="_blank"
-          >
+          <Button className="!hidden md:!block" href="/login" target="_blank">
             Get Started
           </Button>
 

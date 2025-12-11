@@ -53,7 +53,7 @@ const ContactForm = () => {
       )
       .then(
         () => {
-          //   taost("✅ Message sent successfully!");
+          // taost("✅ Message sent successfully!");
           axios
             .post("https://templatehearth-be.onrender.com/contact", {
               name: e.target.from_name.value,

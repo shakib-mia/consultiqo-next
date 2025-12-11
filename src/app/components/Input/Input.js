@@ -25,9 +25,7 @@ const Input = (props) => {
       data-delay={dataDelay}
     >
       <label
-        className={`inline-block font-bold capitalize absolute transition-all text-dark ${
-          focused ? "-top-5 left-3 scale-95" : "top-6 left-5 scale-100"
-        } bottom-0 pointer-events-none`}
+        className={`inline-block font-bold capitalize transition-all text-dark bottom-0 pointer-events-none`}
         htmlFor={inputProps.id}
       >
         {label}
@@ -37,7 +35,7 @@ const Input = (props) => {
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
           {...inputProps}
-          placeholder=""
+          // placeholder=""
           className="mt-2"
         ></textarea>
       ) : (
@@ -45,7 +43,7 @@ const Input = (props) => {
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
           {...inputProps}
-          placeholder=""
+          // placeholder=""
           className="mt-2"
         />
       )}
