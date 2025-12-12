@@ -7,7 +7,8 @@ import HearthMotionInitializer from "./components/HearthMotionInitializer/Hearth
 
 export const metadata = {
   title: "Consultiqo - Get help from the expert consultants.",
-  description: "Consulting Agency Full Site Kit",
+  description:
+    "A modern consulting website template built for agencies, freelancers, and business experts. Clean design, smooth animations, and SEO-optimized pages to help you showcase services and convert more clients effortlessly.",
 };
 
 export default function RootLayout({ children }) {
