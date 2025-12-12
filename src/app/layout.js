@@ -8,7 +8,10 @@ import HearthMotionInitializer from "./components/HearthMotionInitializer/Hearth
 export const metadata = {
   title: "Consultiqo - Get help from the expert consultants.",
   description:
-    "A modern consulting website template built for agencies, freelancers, and business experts. Clean design, smooth animations, and SEO-optimized pages to help you showcase services and convert more clients effortlessly.",
+    "Modern consulting template for agencies and experts, featuring clean design, smooth animations, and SEO-ready pages to showcase services and win clients.",
+  alternates: {
+    canonical: "https://consultiqo-next.vercel.app/",
+  },
 };
 
 export default function RootLayout({ children }) {
