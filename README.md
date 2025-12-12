@@ -1,94 +1,95 @@
 # 🧩 Consultiqo – Next.js Multi-Page Consulting Website Template
 
-**Next.js-powered multi-page consulting website template with smooth scroll, modern animations, and API-ready structure.**
+A premium **Next.js multi-page consulting website template** featuring smooth scroll, modern animations, and an API-ready structure for scalable business websites.
 
-Built with Tailwind CSS and HearthMotion animation library.
+Built with **Next.js 15**, **Tailwind CSS**, and **HearthMotion** — Template Hearth’s custom animation framework combining **Lenis smooth scroll + AOS transitions**.
 
 ---
 
 ## 🏢 Overview
 
-**Consultiqo** is a production-ready Next.js multi-page website template designed for **consulting firms, business agencies, marketing startups, and freelancers** who need a professional, scalable online presence.
+**Consultiqo** is a production-grade multi-page template crafted for **consulting firms, agencies, digital marketing teams, business advisors, and freelancers** who want a fast, modern, and professional online presence.
 
-This evolved version goes beyond a simple landing page — it includes multiple pages, smooth scroll animations, and a dynamic service page that fetches data from an API. Built with **Next.js 15, Tailwind CSS, and HearthMotion** for lightning-fast performance and an exceptional user experience.
+Unlike typical landing-only templates, Consultiqo delivers a complete website experience with:
+
+- dynamic service pages,
+- seamless animations,
+- smooth scrolling,
+- and API-driven content architecture.
+
+Designed for performance, flexibility, and long-term scalability — perfect for both client projects and commercial use.
 
 ---
 
-## 📄 Pages Included
+## 📄 Included Pages
 
-- **🏠 Home** – Engaging landing page
-- **🧑‍💼 About** – Company story and team
-- **⚙️ Services** – Service offerings overview
-- **📄 Single Service** – Dynamic, API-driven service details
-- **💳 Plans** – Pricing and packages
-- **✉️ Contact** – Get in touch form
-- **🚫 404 Page** – Custom error page
+- 🏠 **Home** – Hero, services, testimonials, CTA
+- 🧑‍💼 **About** – Company story, mission, and team
+- ⚙️ **Services** – Overview of all service offerings
+- 📄 **Service Details** – Dynamic, API-powered single service page
+- 💳 **Plans** – Pricing tables and subscription packages
+- ✉️ **Contact** – Inquiry form with validated inputs
+- 🔐 **Login** – Authentication-ready login page
+- 🆕 **Signup** – Account creation page
+- 🔁 **Reset Password** – Password recovery flow
+- 📜 **Terms & Conditions** – Policy and usage guidelines
+- 🚫 **404 Page** – Custom error page with navigation links
 
 ---
 
 ## ✨ Key Features
 
-- ⚡ **Next.js 15** with App Router architecture
-- 🎞️ **HearthMotion** – Custom animation library combining Lenis smooth scroll + AOS
-- 🧩 **Modular components** for easy customization
-- 📱 **Fully responsive** Tailwind CSS design
-- 🔍 **SEO-optimized** meta structure
-- 🪄 **Dynamic API integration** with server components
-- 🚀 **Deploy-ready** for Vercel, Netlify, or static hosts
+- ⚡ **Next.js 15** (App Router) – Modern architecture
+- 🎞️ **HearthMotion Animations** – Lenis + Animate.css combined
+- 🧩 **Modular Component System** – Easy to expand
+- 📱 **Fully Responsive** – Powered by Tailwind CSS
+- 🔍 **SEO Optimized** – Metadata + semantic markup
+- 🪄 **Dynamic API Integration** – Server components ready
+- 🚀 **Deploy-ready** – Optimized for Vercel & Netlify
 
 ---
 
-## 💡 Why Choose Consultiqo
+## 💡 Why Consultiqo?
 
-Consultiqo stands out with its complete multi-page structure, dynamic content capabilities, and premium feel through smooth animations. The clean, scalable codebase makes it perfect for freelancers, agencies, and SaaS startups who want to launch quickly without compromising quality.
+Consultiqo delivers a smooth user experience, scalable structure, and developer-friendly codebase. Whether you're an agency selling client websites or a developer learning modern Next.js techniques, this template gives you a premium starting point.
 
 **Ideal for:**
 
-- Consulting & business agencies
-- Digital marketing firms
-- SaaS startups
-- Freelancers building client websites
-- Developers learning advanced Next.js patterns
+- Business consulting firms
+- Digital marketing agencies
+- SaaS companies
+- Freelancers
+- Developers learning advanced Next.js
 
 ---
 
-## 🛠️ Technical Stack
+## 🛠️ Tech Stack
 
 - **Framework:** Next.js 15 (App Router)
 - **Styling:** Tailwind CSS
-- **Animation:** HearthMotion (Lenis + AOS integration)
+- **Animation:** HearthMotion (Lenis + Animate.css)
 - **Structure:** `/app`, `/components`, `/lib`, `/styles`
 - **Deployment:** One-command deploy on Vercel
 
-> **Note:** Powered by **HearthMotion**, Template Hearth's custom animation library that seamlessly combines Lenis smooth scroll and AOS animations for optimal performance and developer experience.
-
----
-
-## 💰 Licensing Options
-
-| License           | Use Case                          | Projects  | Price    |
-| ----------------- | --------------------------------- | --------- | -------- |
-| 🧍 **Personal**   | Single personal or client project | 1         | **$49**  |
-| 🧑‍💼 **Commercial** | Freelancers & agencies            | Unlimited | **$89**  |
-| 🚀 **Extended**   | SaaS or template resale           | Unlimited | **$129** |
-
-_All licenses include full source code, documentation, and official license PDF._
+> Powered by **HearthMotion**, Template Hearth’s custom animation library for buttery-smooth UX.
 
 ---
 
 ## 📦 What's Included
 
-- ✅ Complete Next.js project source code
-- ✅ HearthMotion animation library
-- ✅ Setup and customization documentation
-- ✅ Official license file
-- ✅ Support and updates via Template Hearth
+- Full Next.js project
+- HearthMotion animation library
+- Custom presets and scroll setup
+- Tailwind CSS configuration
+- Documentation for setup & customization
+- License file
+- Updates & support from Template Hearth
 
 ---
 
 ## 🚀 Getting Started
 
-### 1️⃣ Install Dependencies
+### Install dependencies
 
 ```bash
 npm install
@@ -126,7 +127,7 @@ vercel deploy
 ## 🔗 Related Products
 
 Looking for the lightweight HTML version?  
-👉 **[Consultiqo – Consulting Agency HTML Template](https://example.com)** (Vite.js + Tailwind)
+👉 **[Consultiqo – Consulting Agency HTML Template](https://templatehearth.gumroad.com/l/consultiqo-consulting-agency-responsive-landing-page-html-template-vite-tailwindcss)** (Vite.js + Tailwind)
 
 ---
 
