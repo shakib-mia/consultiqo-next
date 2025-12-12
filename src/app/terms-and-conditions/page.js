@@ -1,16 +1,16 @@
 import React from "react";
-import Signup from "../components/Signup/Signup";
+import TermsAndConditions from "../components/TermsAndConditions/TermsAndConditions";
 
 export const generateMetadata = () => {
   return {
-    title: "Signup - Consultiqo",
+    title: "Terms and Conditions - Consultiqo",
   };
 };
 
 const page = () => {
   return (
     <>
-      <Signup />
+      <TermsAndConditions />
     </>
   );
 };

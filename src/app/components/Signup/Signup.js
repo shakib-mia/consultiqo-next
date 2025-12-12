@@ -34,7 +34,6 @@ const Signup = () => {
   return (
     <>
       <div
-        // className="bg-primary-light"
         style={{
           paddingBlock: navbarHeight + "px",
         }}
@@ -85,7 +84,8 @@ const Signup = () => {
                       I agree to the{" "}
                       <Link
                         className="text-primary underline underline-offset-2 hover:no-underline"
-                        href={"/terms-and-condition"}
+                        href={"/terms-and-conditions"}
+                        target="_blank"
                       >
                         Terms & conditions
                       </Link>
