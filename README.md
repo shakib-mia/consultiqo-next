@@ -2,7 +2,7 @@
 
 A premium **Next.js multi-page consulting website template** featuring smooth scroll, modern animations, and an API-ready structure for scalable business websites.
 
-Built with **Next.js 15**, **Tailwind CSS**, and **HearthMotion** — Template Hearth’s custom animation framework combining **Lenis smooth scroll + AOS transitions**.
+Built with **Next.js 16**, **Tailwind CSS**, and **HearthMotion** — Template Hearth’s custom animation framework combining **Lenis smooth scroll + AOS transitions**.
 
 ---
 
@@ -17,35 +17,36 @@ Unlike typical landing-only templates, Consultiqo delivers a complete website ex
 - smooth scrolling,
 - and API-driven content architecture.
 
-Designed for performance, flexibility, and long-term scalability — perfect for both client projects and commercial use.
+Designed for performance, flexibility and long-term scalability — perfect for both client projects and commercial use.
 
 ---
 
 ## 📄 Included Pages
 
-- 🏠 **Home** – Hero, services, testimonials, CTA
-- 🧑‍💼 **About** – Company story, mission, and team
-- ⚙️ **Services** – Overview of all service offerings
-- 📄 **Service Details** – Dynamic, API-powered single service page
-- 💳 **Plans** – Pricing tables and subscription packages
-- ✉️ **Contact** – Inquiry form with validated inputs
-- 🔐 **Login** – Authentication-ready login page
-- 🆕 **Signup** – Account creation page
-- 🔁 **Reset Password** – Password recovery flow
-- 📜 **Terms & Conditions** – Policy and usage guidelines
-- 🚫 **404 Page** – Custom error page with navigation links
+🏠 **Home** – Hero, services, testimonials, CTA \
+🧑‍💼 **About** – Company story, mission, and team \
+⚙️ **Services** – Overview of all service offerings \
+📄 **Service Details** – Dynamic, API-powered single service page \
+💳 **Plans** – Pricing tables and subscription packages \
+✉️ **Contact** – Inquiry form with validated inputs \
+🔐 **Login** – Authentication-ready login page \
+🆕 **Signup** – Account creation page \
+🔁 **Reset Password** – Password recovery flow \
+📜 **Terms & Conditions** – Policy and usage guidelines \
+🚫 **404 Page** – Custom error page with navigation links \
 
 ---
 
-## ✨ Key Features
+✨ Key Features
 
-- ⚡ **Next.js 15** (App Router) – Modern architecture
-- 🎞️ **HearthMotion Animations** – Lenis + Animate.css combined
-- 🧩 **Modular Component System** – Easy to expand
-- 📱 **Fully Responsive** – Powered by Tailwind CSS
-- 🔍 **SEO Optimized** – Metadata + semantic markup
-- 🪄 **Dynamic API Integration** – Server components ready
-- 🚀 **Deploy-ready** – Optimized for Vercel & Netlify
+⚡ Next.js 15 (App Router) – Modern architecture \
+✨ Static Site Generation (SSG) – Faster load time & better SEO performance \
+🎞️ HearthMotion Animations – Lenis + Animate.css combined \
+🧩 Modular Component System – Easy to expand \
+📱 Fully Responsive – Powered by Tailwind CSS \
+🔍 SEO Optimized – Metadata + semantic markup \
+🪄 Dynamic API Integration – Server components ready \
+🚀 Deploy-ready – Optimized for Vercel & Netlify
 
 ---
 
@@ -95,7 +96,7 @@ Consultiqo delivers a smooth user experience, scalable structure, and developer-
 npm install
 ```
 
-### 2️⃣ Run Development Server
+### Run Development Server
 
 ```bash
 npm run dev
@@ -103,13 +104,13 @@ npm run dev
 
 Your app will be live at `http://localhost:3000`
 
-### 3️⃣ Build for Production
+### Build for Production
 
 ```bash
 npm run build
 ```
 
-### 4️⃣ Deploy on Vercel
+### Deploy on Vercel
 
 ```bash
 vercel deploy
@@ -135,8 +136,6 @@ Looking for the lightweight HTML version?
 
 Template Hearth creates modern, minimal, and developer-friendly web templates designed to save time without sacrificing quality.
 
-**Ready. Set. Launch.**
-
----
+## **Ready. Set. Launch.**
 
 _Crafted with care by **Template Hearth** — Ready. Set. Launch._
