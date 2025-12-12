@@ -2,8 +2,6 @@
 
 import React from "react";
 import PageHeader from "../components/PageHeader/PageHeader";
-import Input from "../components/Input/Input";
-import Button from "../components/Button/Button";
 import Head from "next/head";
 import ContactForm from "../components/ContactForm/ContactForm";
 

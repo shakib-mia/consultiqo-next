@@ -26,7 +26,7 @@ const Input = (props) => {
     >
       <label
         className={`inline-block font-bold capitalize transition-all text-dark bottom-0 pointer-events-none`}
-        htmlFor={inputProps.id}
+        htmlFor={inputProps.name}
       >
         {label}
       </label>
@@ -34,6 +34,7 @@ const Input = (props) => {
         <textarea
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
+          id={inputProps.name}
           {...inputProps}
           // placeholder=""
           className="mt-2"
@@ -44,6 +45,7 @@ const Input = (props) => {
           onBlur={() => setFocused(false)}
           {...inputProps}
           // placeholder=""
+          id={inputProps.name}
           className="mt-2"
         />
       )}

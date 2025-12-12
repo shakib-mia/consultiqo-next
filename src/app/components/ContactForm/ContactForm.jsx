@@ -88,7 +88,8 @@ const ContactForm = () => {
       <Input
         name="from_name"
         type="text"
-        label="Enter Your Name Here"
+        label="Name"
+        placeholder="Enter Your Name Here"
         value={formData.from_name}
         onChange={handleChange}
         required
@@ -96,7 +97,8 @@ const ContactForm = () => {
       <Input
         name="reply_to"
         type="email"
-        label="Enter Your Email Address Here"
+        label="Email Address"
+        placeholder="Enter Your Email Address Here"
         value={formData.reply_to}
         onChange={handleChange}
         required
@@ -104,6 +106,7 @@ const ContactForm = () => {
       <Input
         name="subject"
         type="text"
+        placeholder="Enter Your Subject Here"
         label="Subject"
         value={formData.subject}
         onChange={handleChange}
@@ -111,7 +114,8 @@ const ContactForm = () => {
       />
       <Input
         name="message"
-        label="Enter Your Message"
+        label="Your Message"
+        placeholder="Type Your Message Here"
         rows="6"
         value={formData.message}
         as="textarea"
