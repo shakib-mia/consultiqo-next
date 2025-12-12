@@ -85,7 +85,6 @@ const Signup = () => {
                       <Link
                         className="text-primary underline underline-offset-2 hover:no-underline"
                         href={"/terms-and-conditions"}
-                        target="_blank"
                       >
                         Terms & conditions
                       </Link>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { SiGumroad } from "react-icons/si";
@@ -74,7 +75,7 @@ const Footer = () => {
               <a href="#">Privacy Policy</a>
             </li>
             <li>
-              <a href="#">Terms & Conditions</a>
+              <Link href="/terms-and-conditions">Terms & Conditions</Link>
             </li>
             <li>
               <a href="#">Return Policy</a>
