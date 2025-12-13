@@ -12,16 +12,16 @@ const Footer = () => {
           <h6 className="mb-2 lg:mb-5">Company</h6>
           <ul className="mt-2 space-y-1">
             <li>
-              <a href="#">About</a>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
             <li>
-              <a href="#">Careers</a>
+              <Link href="/services">Services</Link>
             </li>
             <li>
-              <a href="#">Press</a>
+              <Link href="/plans">Plans</Link>
             </li>
           </ul>
         </aside>
